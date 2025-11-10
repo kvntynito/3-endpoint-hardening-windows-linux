@@ -31,7 +31,7 @@ Endpoint Hardening Repo
 - Screenshots or short gifs (if any)
 
 ## 🧠 What I Learned
-- Bullet points of concepts/skills you gained
+- Bullet points of concepts/skills you gained - Write what you learned about permissions, policies, configs.
 
 ## ✅ Next Steps
 - Planned improvements or stretch goals
