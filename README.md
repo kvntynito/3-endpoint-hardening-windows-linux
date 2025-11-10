@@ -10,7 +10,7 @@ It includes security baselines, configuration changes, validation steps, and evi
 - Validation commands
 - Screenshots of hardened settings
 
-## 🧪 What’s Inside
+## 📁 What’s Inside
 A simple virtualized environment was used to apply and validate system hardening:
 - **Hypervisor:** Proxmox / VMware / VirtualBox
 - **Windows VM:** Windows 10/11 or Server 2019
@@ -26,7 +26,7 @@ A simple virtualized environment was used to apply and validate system hardening
   - Local Group Policy Editor (Windows)
   - Windows Security Baselines (Microsoft)
 
-## 🏗️ Lab Setup (Quick Start)
+## 🧪 Lab Setup (Quick Start)
 - Host: Proxmox/VMWare/Hyper-V/Docker (choose one)
 - VMs: Windows Server 2019, Ubuntu 22.04, Kali
 - Network: pfSense with two VLANs (Home / Lab)
