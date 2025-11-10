@@ -1,10 +1,13 @@
 # <Project Title>
 
-> One-liner: what this repo demonstrates (e.g., “Azure Sentinel detections + incident write-ups”)
+Endpoint Hardening Repo
 
 ## 🎯 Objectives
-- What you set out to learn/build
-- Which security domain(s) this covers (SIEM, IR, GRC, Cloud, etc.)
+- Windows baseline
+- Linux baseline
+- Hardening steps
+- Validation commands
+- Screenshots of hardened settings
 
 ## 🧪 What’s Inside
 - `docs/` – reports, playbooks, baselines, diagrams
