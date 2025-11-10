@@ -12,13 +12,13 @@ It includes security baselines, configuration changes, validation steps, and evi
 
 ## 🧪 What’s Inside
 A simple virtualized environment was used to apply and validate system hardening:
-- Hypervisor: Proxmox / VMware / VirtualBox
-- Windows VM: Windows 10/11 or Server 2019
-- Linux VM: Ubuntu 22.04 / Debian / CentOS
-- Network:
+- **Hypervisor:** Proxmox / VMware / VirtualBox
+- **Windows VM:** Windows 10/11 or Server 2019
+- **Linux VM:** Ubuntu 22.04 / Debian / CentOS
+- **Network:**
   - Segmented via pfSense/OPNsense
   - Optional: AD Domain for GPO hardening
-- Tools Used:
+- **Tools Used:**
   - Sysinternals Suite
   - PowerShell 7
   - Lynis (Linux)
