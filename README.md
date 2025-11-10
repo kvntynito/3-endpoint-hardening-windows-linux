@@ -32,7 +32,7 @@ A simple virtualized environment was used to apply and validate system hardening
 - Network: pfSense with two VLANs (Home / Lab)
 - Cloud (optional): Azure free tier (Sentinel, Key Vault, Defender for Cloud)
 
-🔐**Hardening Focus Areas** -  **Windows**
+## 🔐**Hardening Focus Areas** -  **Windows**
 - Local policies (LSA protection, RDP restrictions)
 - Attack surface reduction
 - PowerShell logging
@@ -42,7 +42,7 @@ A simple virtualized environment was used to apply and validate system hardening
 - Secure user rights assignments
 - Removing unnecessary roles/features
 
-🔐**Hardening Focus Areas** - **Linux**
+## 🔐**Hardening Focus Areas** - **Linux**
 - SSH hardening
 - Password & account lockout policies
 - File permissions
@@ -77,10 +77,15 @@ Upload outputs/screenshots into lab/.
 
 ## 📊 Deliverables
 ✅ Windows Hardening Baseline
+
 ✅ Linux Hardening Baseline
+
 ✅ Before/after screenshots
+
 ✅ Validation reports (PowerShell, Lynis, auditd)
+
 ✅ Architecture diagram (optional)
+
 ✅ Scripts (Windows auditing / Linux auditing)
 
 ## 🧠 What I Learned
@@ -94,7 +99,12 @@ Upload outputs/screenshots into lab/.
 - How to document system changes clearly and professionally
 
 ## ✅ Next Steps
-- Planned improvements or stretch goals
+- Add Active Directory GPO hardening
+- Apply Microsoft’s official security baselines
+- Add CIS Level 1 / Level 2 benchmark comparisons
+- Automate validation checks with PowerShell/Bash
+- Add scripts to automatically export baseline configs
+- Extend to macOS hardening (optional)
 
 ## ⚖️ License
 MIT – see `LICENSE`.
