@@ -4,33 +4,51 @@ This project demonstrates practical endpoint hardening on both Windows and Linux
 It includes security baselines, configuration changes, validation steps, and evidence showing how systems were strengthened against common attack vectors.
 
 ## 🎯 Objectives
-- Windows baseline
-- Linux baseline
-- Hardening steps
-- Validation commands
-- Screenshots of hardened settings
+
+- Build Windows & Linux hardening baselines
+- Apply secure configuration changes
+- Validate results using system and security tools
+- Capture before/after evidence
+- Strengthen systems against misconfigurations commonly exploited by attackers
 
 ## 📁 What’s Inside
-A simple virtualized environment was used to apply and validate system hardening:
-- **Hypervisor:** Proxmox / VMware / VirtualBox
-- **Windows VM:** Windows 10/11 or Server 2019
-- **Linux VM:** Ubuntu 22.04 / Debian / CentOS
-- **Network:**
-  - Segmented via pfSense/OPNsense
-  - Optional: AD Domain for GPO hardening
-- **Tools Used:**
-  - Sysinternals Suite
-  - PowerShell 7
-  - Lynis (Linux)
-  - auditd (Linux)
-  - Local Group Policy Editor (Windows)
-  - Windows Security Baselines (Microsoft)
+- docs/       → Baselines, checklists, templates
+- lab/        → Validation outputs, screenshots, before/after comparisons
+- scripts/    → Optional auditing and configuration scripts
+- .github/    → Issue/PR templates
 
 ## 🧪 Lab Setup (Quick Start)
-- Host: Proxmox/VMWare/Hyper-V/Docker (choose one)
-- VMs: Windows Server 2019, Ubuntu 22.04, Kali
-- Network: pfSense with two VLANs (Home / Lab)
-- Cloud (optional): Azure free tier (Sentinel, Key Vault, Defender for Cloud)
+
+**Host:**
+- Proxmox
+- VMware
+- VirtualBox
+- Hyper-V
+
+**Operating Systems:**
+- Windows: Windows 10/11 or Server 2019
+- Linux: Ubuntu 22.04 / Debian / CentOS
+
+**Network:**
+- Segmented VLANs using pfSense/OPNsense
+- Optional: AD Domain for GPO-based Windows hardening
+
+**Tools Used:**
+
+- Windows
+  - Sysinternals Suite
+  - PowerShell 7
+  - Microsoft Security Baselines
+  - Local Group Policy Editor (gpedit.msc)
+  - secedit / gpresult
+
+- Linux
+  - Lynis
+  - auditd
+  - UFW / ipTables
+  - sysctl
+
+Some validation steps integrate with Repo 1 Sentinel logs when cloud ingestion is enabled.
 
 ## 🔐**Hardening Focus Areas** -  **Windows**
 - Local policies (LSA protection, RDP restrictions)
@@ -63,6 +81,10 @@ Run these PowerShell commands:
 - gpresult /h report.html
 
 Document the results in lab/.
+- Capture:
+  - before/after screenshots
+  - policy reports
+  - mitigation status results
 
 **Linux Validation**
 
@@ -74,6 +96,11 @@ Run:
 - sudo sysctl -a
 
 Upload outputs/screenshots into lab/.
+- include:
+  - Lynis audit results
+  - SSH configuration changes
+  - sysctl kernel hardening
+  - firewall rule status
 
 ## 📊 Deliverables
 ✅ Windows Hardening Baseline
